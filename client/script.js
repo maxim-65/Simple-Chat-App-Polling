@@ -91,7 +91,7 @@ async function fetchMessages() {
     }
 
     const data = await response.json();
-    const messages = normalizeMessages(data);
+    const messages = normalizeMessages(data.success ? data.data : []);
     const newMessages = messages.filter((msg) => Number(msg.id) > lastMessageId);
 
     if (newMessages.length > 0) {
