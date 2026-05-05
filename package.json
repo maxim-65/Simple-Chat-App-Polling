@@ -1,0 +1,25 @@
+{
+  "name": "simple-chat-app-polling",
+  "version": "1.0.0",
+  "description": "A simple chat application with polling built using Node.js, Express, and Vanilla JavaScript",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "keywords": [
+    "chat",
+    "polling",
+    "express",
+    "vanilla-js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

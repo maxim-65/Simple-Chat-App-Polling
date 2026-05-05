@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Chat App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <!-- Header -->
+      <header class="chat-header">
+        <h1>💬 Simple Chat</h1>
+        <p class="status-indicator">
+          <span class="status-dot"></span>
+          <span id="status-text">Connecting...</span>
+        </p>
+      </header>
+
+      <!-- Messages Display Area -->
+      <div class="messages-container" id="messagesContainer">
+        <div class="messages-empty">
+          <p>No messages yet. Start the conversation!</p>
+        </div>
+      </div>
+
+      <!-- Input Area -->
+      <footer class="chat-footer">
+        <div class="input-group">
+          <input
+            type="text"
+            id="messageInput"
+            class="message-input"
+            placeholder="Type your message..."
+            autocomplete="off"
+          />
+          <button id="sendBtn" class="send-button" disabled>
+            <span id="sendBtnText">Send</span>
+            <span class="send-icon">→</span>
+          </button>
+        </div>
+        <p class="polling-info">
+          🔄 Auto-refreshing every 3 seconds
+        </p>
+      </footer>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
